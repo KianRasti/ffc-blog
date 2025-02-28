@@ -1,0 +1,15 @@
+---
+distFolder: .next
+setupCommands:
+  - npm ci
+  - npm run build
+startCommand: npm start
+environmentVariables:
+  - name: DATABASE_URL
+    value: ${DATABASE_URL}
+  - name: NEXTAUTH_URL
+    value: ${NEXTAUTH_URL}
+  - name: NEXTAUTH_SECRET
+    value: ${NEXTAUTH_SECRET}
+  - name: NEXTAUTH_JWT_SECRET
+    value: ${NEXTAUTH_JWT_SECRET}
